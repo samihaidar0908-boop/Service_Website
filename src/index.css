@@ -1,0 +1,50 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+  text-decoration:none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border:none;
+}
+
+:root {
+  /* color */
+  --primary-color: #0A192f;
+  --secondary-color: #112240;
+  --btn-color: #013ee6;
+  --shadow-color: #5044f8;
+  --accent: #64ffda;
+  --paragraph: #1b50ff;
+  --dark-color: #000000;
+  --text: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top:50px;
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 2500px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 2000px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2499px) {
+    body {
+        font-size: 18px;
+    }
+}
