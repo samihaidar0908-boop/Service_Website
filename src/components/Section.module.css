@@ -1,0 +1,518 @@
+section {
+    min-height: 100vh;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+}
+
+.homePage { 
+    font-size: 1.5rem;
+    background-color: #f4f4f4;
+    color: var(--secondary-color);
+   
+}
+
+.container{  
+    margin: 0 auto;
+    max-width: min(2100px, 95%);
+    padding: 50px 0;
+    width: 100%;
+}
+
+.homePage .content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 3rem;
+}
+
+.homePage span {
+    color: var(--btn-color);
+}
+
+.homePage button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 35px;
+    transition: transform 0.3s ease;
+}
+
+.homePage button:hover {
+    transform: scale(1.05)translateY(-5px);
+    background-color: var(--btn-color);
+    box-shadow: 0 0 15px var(--secondary-color)
+}
+
+.featuresPage {
+    background-color:#f4f4f4;
+    color: var(--secondary-color)
+}
+
+.aboutPage .container {
+    max-width: 1200px;
+}
+.aboutPage .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    margin: 0 auto;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.aboutPage img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width:350px;
+}
+
+.aboutPage img:hover {
+    transform: scale(1.05);
+}
+
+.headingSkills h3{
+    font-size: 5rem;
+    text-align: center;
+    display:inline-block;
+    font-weight: bold;
+    position: relative;
+    color: inherit;
+    cursor: pointer;
+    transition:transform 0.3s ease;
+}
+
+.headingSkills h3:hover {
+    transform: scale(1.05)
+}
+
+.aboutPage h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.aboutPage h3:hover::after {
+    width: 100%;
+}
+
+.aboutPage p {
+    font-size:1.5rem;
+}
+
+.headingSkills {
+    text-align: center;
+    margin : 4rem 0;
+    color: var(--text);
+    font-size: 2.5rem;
+}
+
+.container .skills {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 0 auto; 
+    gap: 2rem;
+}
+
+
+.iconSkills {
+    display: flex; 
+    align-items: center; /* Biar icon dan teks sejajar secara vertikal */
+    gap: 10px; /* Jarak antara Icon dan Teks */
+    font-size: 1.5rem;
+    color: var(--text);
+    background-color: transparent;
+    padding: 15px 25px; 
+    border-radius: 50px;
+    border: 2px solid var(--text); 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.iconSkills:hover {
+    background-color: var(--btn-color);
+    color: #ffffff;
+    border-color: var(--btn-color);
+    transform: translateY(-5px); 
+    box-shadow: 5px 5px 15px rgb(0, 0, 255);
+}
+
+.iconSkills .PyIcon{
+    background: linear-gradient(to bottom right, #3776AB 50%, #FFD43B 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.iconSkills .HtmlIcon {
+    color: #E34F26;
+}
+
+.iconSkills .PhpIcon {
+    color: #777BB4;
+}
+
+.iconSkills .CssIcon {
+    color: #1572b6;
+}
+
+.iconSkills .JsIcon {
+    color: #f7d11e;
+} 
+
+.iconSkills .reactIcon {
+    color: #61DAFB;
+}
+
+.container .logo{
+    width: fit-content;
+    color : var(--secondary-color);
+    margin: 0 auto;
+    font-size: 5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+.container .logo:hover {
+    transform: scale(1.05);
+    color: #4b17e4
+}
+
+.featuresPage .containerGrid{
+    font-size: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: stretch;
+    margin: 0 auto;
+    padding: 9%;
+    gap: 2rem;
+}
+
+.containerGrid .content {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.3s ease;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 15px;
+    border: 3px solid transparent;
+}
+
+.containerGrid .content:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-color);
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 15px var(--paragraph);
+}
+
+.containerGrid .content:nth-child(odd){
+    background-color: var(--btn-color);
+}
+
+.containerGrid .content:nth-child(odd):hover {
+    border: 3px solid var(--dark-color);
+    box-shadow: 0 0 15px var(--dark-color);
+}
+
+.featuresPage .content h1 {
+    margin-bottom: auto;
+    font-size: 2rem;
+    color: var(--text);
+    margin-bottom: 2rem;
+}
+
+.featuresPage .content p {
+    margin-top: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.container .containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    cursor: pointer;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid transparent; 
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--btn-color);
+    box-shadow : 0 0 15px var(--shadow-color)
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+}
+
+.card h1 {
+    color: var(--text);
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.projectPage .logo {
+    cursor:text;
+    font-size: 3rem;
+    color: var(--text);
+}
+
+.projectPage .logo:hover {
+    transform: none;
+    color:  var(--text)
+}
+.logo span {
+    color: var(--btn-color)
+}
+
+.contactSection {
+    background-color: #000000; /* Atau warna background dark lu */
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.contactSection .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contactHeader {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contactHeader h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contactHeader p {
+    color: #aaaaaa;
+    font-size: 1.3rem;
+}
+
+.contactContent {
+    display: grid;
+    /* Belah dua di laptop, otomatis numpuk ke bawah di HP */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+}
+
+/* =========================================
+   3. KOLOM KIRI (INFO KONTAK)
+   ========================================= */
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.iconBox {
+    /* Bikin kotak tipis buat icon kayak di desain lu */
+    width: 50px;
+    height: 50px;
+    border: 1px solid #1a3636; /* Warna border cyan gelap */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #00c8ff; /* Warna cyan terang */
+}
+
+.infoText h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.infoText p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* =========================================
+   4. KOLOM KANAN (FORMULIR)
+   ========================================= */
+.formRight form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputGroup label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Styling Input & Textarea */
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #0a0a0a; /* Gelap banget */
+    border: 1px solid #222222; /* Border abu-abu super tipis */
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: inherit; /* Biar font-nya ngikutin website */
+    transition: border-color 0.3s ease;
+}
+
+/* Pas lagi ngetik, bordernya nyala biru dikit */
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    border-color: #00c8ff; 
+}
+
+/* =========================================
+   5. TOMBOL KIRIM PESAN
+   ========================================= */
+.submitBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #00c8ff; /* Warna cyan terang */
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #00a0cc;
+    transform: translateY(-2px); /* Naik dikit pas di hover */
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .homePage .content {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .homePage .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutPage p {
+        font-size: 1.2rem; /* fix dari 3rem yang tadi kebesaran */
+    }
+
+    .headingSkills h3 {
+        font-size: 3rem;
+    }
+
+    .iconSkills {
+        font-size: 2.5rem;
+        padding: 10px 18px;
+    }
+
+    .featuresPage .containerGrid {
+        grid-template-columns: 1fr; /* 1 kolom di HP */
+        padding: 5%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card h1 {
+        font-size: 1.8rem;
+    }
+
+    .contactContent {
+        grid-template-columns: 1fr; /* form numpuk ke bawah di HP */
+    }
+
+    .homePage button {
+        font-size: 1.2rem;
+    }
+}
+
+/* =====================
+   HP kecil (max 480px)
+   ===================== */
+@media (max-width: 480px) {
+    .homePage .content h1 {
+        font-size: 2rem;
+    }
+
+    .headingSkills h3 {
+        font-size: 2.5rem;
+    }
+
+    .iconSkills {
+        font-size: 2rem;
+        padding: 8px 14px;
+    }
+
+    .container .logo {
+        font-size: 3.5rem;
+    }
+}

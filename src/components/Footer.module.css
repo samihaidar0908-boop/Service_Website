@@ -1,0 +1,159 @@
+/* =========================================
+   1. PEMBUNGKUS UTAMA
+   ========================================= */
+.footer {
+    background-color: #050505; /* Warna hitam pekat untuk footer */
+    color: #ffffff;
+    padding-top: 60px;
+    border-top: 1px solid #1a1a1a; /* Garis tipis pemisah dari section atasnya */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   2. GRID 4 KOLOM
+   ========================================= */
+.footerGrid {
+    display: grid;
+    /* Rahasia responsif: Di laptop 4 kolom, di HP otomatis turun */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* =========================================
+   3. STYLING KONTEN DALAM KOLOM
+   ========================================= */
+/* Kolom 1: Logo */
+.logoHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #00222a; /* Latar belakang logo cyan gelap */
+    color: #00c8ff; /* Warna text cyan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: monospace; /* Biar style </>-nya kerasa koding banget */
+}
+
+.logoHeader h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.desc {
+    color: #888888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Judul tiap kolom (Jam Operasional, Kontak, dll) */
+.colTitle {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.colTitle i {
+    color: #00c8ff; /* Icon cyan */
+}
+
+/* Kolom 2: Jam Operasional */
+.scheduleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scheduleList li {
+    display: flex;
+    justify-content: space-between; /* Kiri ke kiri, kanan ke kanan */
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+.closedText {
+    color: #ff4d4d; /* Warna merah untuk "Tutup" */
+    font-weight: bold;
+}
+
+/* Kolom 3: Kontak */
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #888888;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Kolom 4: Media Sosial */
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialIcons a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+    border-color: #00c8ff;
+    color: #00c8ff;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   4. BAGIAN BAWAH (COPYRIGHT)
+   ========================================= */
+.footerBottom {
+    border-top: 1px solid #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    color: #666666;
+    font-size: 0.85rem;
+}
+
+.heart {
+    color: #ff4d4d;
+    display: inline-block;
+    /* Opsional: Bikin love-nya detak-detak dikit */
+    animation: heartbeat 1.5s infinite; 
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
